@@ -10,5 +10,3 @@ Planned Features:
 >Default Mazes With Custom Features
 
 >Keyboard And Mouse Support
-
->Gamepad Support
