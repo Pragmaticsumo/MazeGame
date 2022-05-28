@@ -12,6 +12,7 @@ namespace MazeGame
     public static class AssetManager
     {
         /*SpriteFonts*/
+        public static SpriteFont TheFont;
 
         /*Texture2Ds*/
         public static Texture2D Player;
@@ -72,6 +73,7 @@ namespace MazeGame
 
         private static void LoadSpriteFonts()
         {
+            TheFont = LoadSpriteFont("DefaultFont");
         }
 
         private static void LoadTexture2Ds()

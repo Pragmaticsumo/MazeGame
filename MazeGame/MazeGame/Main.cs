@@ -58,6 +58,8 @@ namespace MazeGame
 
         public static void DrawText(SpriteBatch spriteBatch, GraphicsDeviceManager graphicsDeviceManager, GraphicsDevice graphicsDevice)
         {
-        }
+            Vector2 levelName = AssetManager.TheFont.MeasureString(Level.m.LevelName);
+            spriteBatch.DrawString(AssetManager.TheFont, Level.m.LevelName, new Vector2(0, 25 - levelName.Y), Color.Black);
+    }
     }
 }
