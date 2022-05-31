@@ -15,6 +15,8 @@ namespace MazeGame.Entities
         public float playerRotation = 0f;
         public SpriteEffects playerEffect = SpriteEffects.None;
 
+        public int counter = 0;
+
         public static Vector2 ScreenMiddle => Main.WindowMeasurements / 2f;
 
         public override void Update(GameTime gameTime)
@@ -47,7 +49,16 @@ namespace MazeGame.Entities
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(AssetManager.Player, this.Position, null, Color.White, playerRotation, Vector2.Zero, playerScale, playerEffect, 0f);
+            if (counter == 0)
+            {
+                spriteBatch.Draw(AssetManager.Player, Main.Level.m.PlayerSpawn, null, Color.White, playerRotation, Vector2.Zero, playerScale, playerEffect, 0f);
+                this.Position = Main.Level.m.PlayerSpawn;
+                counter++;
+            }
+            else
+            {
+                spriteBatch.Draw(AssetManager.Player, this.Position, null, Color.White, playerRotation, Vector2.Zero, playerScale, playerEffect, 0f);
+            }
         }
     }
 }

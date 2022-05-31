@@ -1,0 +1,5 @@
+﻿{
+    "LevelName" : "I changed!",
+    "PlayerSpawn" : "400, 300",
+    "MapPath" : "Levels/TestLevelMap"
+}

@@ -13,7 +13,7 @@ namespace MazeGame
 {
     public class Level
     {
-        public static StreamReader r = new StreamReader("Levels/testLevel.json");
+        public static StreamReader r = new StreamReader(Main.LevelPath);
         static string jsonString = r.ReadToEnd();
         public LevelParams m = JsonConvert.DeserializeObject<LevelParams>(jsonString);
 

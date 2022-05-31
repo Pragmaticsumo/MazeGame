@@ -1,5 +1,5 @@
 ﻿{
-    "LevelName" : "Test Level",
+    "LevelName" : "This Text Is Comepletely Changable!",
     "PlayerSpawn" : "100, 200",
     "MapPath" : "Levels/TestLevelMap"
 }

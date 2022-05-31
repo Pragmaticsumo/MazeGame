@@ -19,6 +19,7 @@ namespace MazeGame
         public static Player Player = new Player();
         public static Level Level = new Level();
         public static Vector2 WindowMeasurements = Vector2.Zero;
+        public static string LevelPath = "Levels/testLevel.json";
 
         /*States*/
         public static MouseState MazeMouse = Mouse.GetState();
@@ -54,6 +55,15 @@ namespace MazeGame
             MazeKeyboard = Keyboard.GetState();
 
             Level.Update(gameTime);
+
+            if (MazeKeyboard.IsKeyDown(Keys.P) && PrevMazeKeyboard.IsKeyUp(Keys.P))
+            {
+                LevelPath = "Levels/testLevel02";
+            }
+            else if (MazeKeyboard.IsKeyDown(Keys.L) && PrevMazeKeyboard.IsKeyUp(Keys.L))
+            {
+                LevelPath = "Levels/testLevel";
+            }
         }
 
         public static void DrawText(SpriteBatch spriteBatch, GraphicsDeviceManager graphicsDeviceManager, GraphicsDevice graphicsDevice)
