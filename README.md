@@ -3,10 +3,10 @@ A simple maze game with custom maze compatibility, randomized mazes and preset m
 
 
 Planned Features: 
->Simple Custom Mazes
+>Simple Custom Maze Creation
 
 >Randomized Maze Generation
 
->Default Mazes With Custom Features
+>Default Mazes With Cool Features
 
->Keyboard And Mouse Support
+>Keyboard And Mouse Support (Maybe Gamepad If I Get Around To It)
